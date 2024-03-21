@@ -148,7 +148,7 @@ for x, y in zip(px, py):
      ab = AnnotationBbox(getImage(path, .2), (x, y), frameon=False)
      ax.add_artist(ab)
 
-# Generate Serves
+# Generate Servers
 servers = []
 # Rural Servers
 nServers = 5
@@ -185,7 +185,7 @@ rx = np.arange(100, 600, 200)
 ry = np.arange(100, 600, 200)
 for x in rx:
     for y in ry:
-        ax.add_patch(plt.Circle((x, y), 141, facecolor="none", edgecolor='blue'))
+        ax.add_patch(plt.Circle((x, y), 201.5, facecolor="none", edgecolor='blue'))
         relay = Relay(x, y, 100)
         relay.colors = np.random.choice(colors, 3)
         relay.TxRate = 200
